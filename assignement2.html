@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="asset/img/js.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Arithmetic Operations</title>
+    
+    <div class="main">
+    <img src="asset/img/js.png" alt="">
+    <button><a href="index.html">Assignement1</a></button>
+    <button><a href="assignement2.html">Assignement2</a></button>
+    <button><a href="assignement3.html">Assignement3</a></button>
+    <button><a href="assignement4.html">Assignement4</a></button>
+    
+</div><hr>
+<center><h1>Second Assignement</h1></center>
+
+</body>
+<script>
+
+document.write("<h1>Q1. dekhne ke liye page reload karen then 1st prompt pe Q1.hai</h1><br>");
+
+var input = prompt("Enter a character number:");
+
+var ascii = input.charCodeAt(0);
+
+if (ascii >= 48 && ascii <= 57) {
+    alert("The given input is a number.");
+} 
+
+else if (ascii >= 65 && ascii <= 90) {
+    alert("The given input is an uppercase letter.");
+} 
+
+else if (ascii >= 97 && ascii <= 122) {
+    alert("The given input is a lowercase letter.");
+} 
+
+else {
+    alert("The given input is not a number, uppercase letter, or lowercase letter.");
+}
+
+document.write("<h1>Q2. dekhne ke liye page reload karen then 2nd prompt pe Q2.hai</h1><br>");
+
+var num1 = prompt("Enter the first integer:");
+
+var num2 = prompt("Enter the second integer:");
+
+if (num1 > num2) {
+    alert("The larger number is: " + num1);
+} else if (num1 < num2) {
+    alert("The larger number is: " + num2);
+} else {
+    alert("Both numbers are equal.");
+}
+
+document.write("<h1>Q3. dekhne ke liye page reload karen then 4th prompt pe Q3.hai</h1><br>")
+
+var number = prompt("Enter a number:");
+
+if (number > 0) {
+    alert("The number is positive.");
+} else if (number < 0) {
+    alert("The number is negative.");
+} else {
+    alert("The number is zero.");
+}
+
+document.write("<h1>Q4. dekhne ke liye page reload karen then 5th prompt pe Q4.hai</h1><br>")
+
+var vowel = prompt("Please Enter a vowel")
+if(vowel === "a" || vowel === "e" || vowel === "i" ||vowel ==="o" || vowel ==="u"){
+    alert("True")
+}
+else{
+    alert("False")
+}
+
+document.write("<h1>Q5. dekhne ke liye page reload karen then 6th prompt pe Q5.hai</h1><br>")
+
+var correctPassword = "password123";
+
+var userPassword = prompt("Enter your password:(correct password is password 123)");
+
+if (!userPassword) {
+    alert("Please enter your password");
+} else if (userPassword === correctPassword) {
+    alert("Correct! The password you entered matches the original password");
+} else {
+    alert("Incorrect password");
+}
+
+document.write("<h1>Q6. dekhne ke liye page reload karen then 7th prompt pe Q6.hai</h1><br>")
+
+var hour = prompt("Enter the hour (0-23):");
+
+//input ko number main convert krne ka liye
+hour = Number(hour);
+
+var greeting;
+
+if (hour < 18) {
+    greeting = "Good day";
+} else {
+    greeting = "Good evening";
+}
+
+alert(greeting);
+
+document.write("<h1>Q7. dekhne ke liye page reload karen then th prompt pe Q7.hai</h1><br>")
+
+var time = prompt("Enter the time in 24 hour clock format (e.g., 1900 for 7pm):");
+
+var greeting;
+
+if (time >= "0000" && time < "1200") {
+    greeting = "Good morning";
+} else if (time >= "1200" && time < "1700") {
+    greeting = "Good afternoon";
+} else if (time >= "1700" && time < "2100") {
+    greeting = "Good evening";
+} else if (time >= "2100" && time < "2400") {
+    greeting = "Good night";
+} else {
+    greeting = "Invalid time format";
+}
+
+alert(greeting);
+
+</script>
+</html>

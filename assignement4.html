@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="asset/img/js.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Arithmetic Operations</title>
+    
+    <div class="main">
+    <img src="asset/img/js.png" alt="">
+    <button><a href="index.html">Assignement1</a></button>
+    <button><a href="assignement2.html">Assignement2</a></button>
+    <button><a href="assignement3.html">Assignement3</a></button>
+    <button><a href="assignement4.html">Assignement4</a></button>
+    
+</div><hr>
+<center><h1>Fourth Assignement</h1></center>
+
+</body>
+<script>
+    document.write("<h1>Q1. inspect krke dekh skte hain</h1>")
+   var multiArray = [];
+console.log(multiArray);
+
+document.write("<h1>Q2.</h1>")
+
+var matrix = [
+    [0, 1, 2, 3],
+    [1, 0, 1, 2],
+    [2, 1, 0, 1]
+];
+
+
+var matrixText = "Matrix:<br>";
+for (var i = 0; i < matrix.length; i++) {
+    matrixText += matrix[i].join(" ") + "<br>";
+}
+
+document.body.innerHTML += matrixText;
+
+document.write("<h1>Q3.</h1>")
+
+for (var i = 1; i <= 10; i++) {
+    document.write(i);
+}
+
+document.write("<h1>Q4.</h1>")
+
+var tableNumber = prompt("Enter the table number:");
+var tableLength = prompt("Enter the table length:");
+
+var multiplicationTable = "";
+
+multiplicationTable += "<h2>Multiplication Table of " + tableNumber + ":</h2>";
+for (var i = 1; i <= tableLength; i++) {
+    multiplicationTable += tableNumber + " * " + i + " = " + (tableNumber * i) + "<br>";
+}
+
+document.write(multiplicationTable);
+
+document.write("<h1>Q5.</h1>")
+
+var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+
+for (var i = 0; i < fruits.length; i++) {
+    document.write(fruits[i]);
+    document.write("<br>")
+}
+
+document.write("<h1>Q.6</h1>")
+
+
+document.write("a. Counting: ");
+for (var i = 1; i <= 15; i++) {
+    document.write(i + ", ");
+}
+
+document.write("<br><br>");
+
+document.write("b. Reverse counting: ");
+for (var i = 10; i >= 1; i--) {
+    document.write(i + ", ");
+}
+
+document.write("<br><br>");
+
+document.write("c. Even: ");
+for (var i = 0; i <= 20; i += 2) {
+    document.write(i + ", ");
+}
+
+document.write("<br><br>");
+
+document.write("d. Odd: ");
+for (var i = 1; i <= 19; i += 2) {
+    document.write(i + ", ");
+}
+
+document.write("<br><br>");
+
+document.write("e. Series: ");
+for (var i = 2; i <= 20; i += 2) {
+    document.write(i + "k, ");
+}
+
+document.write("<h1>Q.7 dekhne ke liye 3rd prompt pe Q.7 hy</h1>")
+
+ var items = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+var searchItem = prompt("Welcome to ABC Bakery. What do you want to order sir/madam?");
+
+var index = items.indexOf(searchItem);
+
+if (index !== -1) {
+    alert(searchItem + " is available at index " + index + " in our bakery.");
+} else {
+    alert("We are sorry. " + searchItem + " is not available in our bakery.");
+}
+
+document.write("<h1>Q.8</h1>")
+
+var A = [24, 53, 78, 91, 12];
+
+var largest = A[0];
+
+for (var i = 1; i < A.length; i++) {
+    if (A[i] > largest) {
+        largest = A[i];
+    }
+}
+document.write(A+"<br><br>")
+document.write("The largest number in the array is: " + largest);
+
+document.write("<h1>Q.9</h1>")
+
+var B = [24, 53, 78, 91, 12];
+
+var smallest = B[0];
+
+for (var i = 1; i < B.length; i++) {
+    if (B[i] < smallest) {
+        smallest = B[i];
+    }
+}
+
+
+document.write(B+"<br><br>")
+document.write("The smallest number in the array is: " + smallest);
+
+document.write("<h1>Q.10</h1>")
+
+for (var i = 1; i <= 100; i++) {
+    if (i % 5 === 0) {
+
+        document.write(i);
+    }
+}
+</script>
+</html>

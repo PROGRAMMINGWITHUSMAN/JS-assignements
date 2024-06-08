@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="asset/img/js.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Arithmetic Operations</title>
+    
+    <div class="main">
+    <img src="asset/img/js.png" alt="">
+    <button><a href="index.html">Assignement1</a></button>
+    <button><a href="assignement2.html">Assignement2</a></button>
+    <button><a href="assignement3.html">Assignement3</a></button>
+    <button><a href="assignement4.html">Assignement4</a></button>
+    
+</div><hr>
+<center><h1>Third Assignement</h1></center>
+
+</body>
+<script>
+
+     var studentNamesLiteral = [];
+
+var studentNamesObject = new Array();
+
+var stringsArray = ["Apple", "Banana", "Cherry"];
+
+var numbersArray = [1, 2, 3, 4, 5];
+
+var booleanArray = [true, false, true, false];
+
+var mixedArray = ["Hello", 42, true, "World"];
+
+var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+
+document.write("<h1>Qualifications:<br>Q1.</h1>");
+    for (var i = 0; i < qualifications.length; i++) {
+        document.write((i + 1) + ") " + qualifications[i] + "<br>");
+    }
+
+var names = ["Michael", "John", "Tony"];
+var scores = [320, 230, 480];
+
+var totalMarks = 500;
+
+var percentageMichael = (scores[0] / totalMarks) * 100;
+
+var percentageJohn = (scores[1] / totalMarks) * 100;
+
+var percentageTony = (scores[2] / totalMarks) * 100;
+
+document.write("<h1>Q2.</h1>")
+document.write("<br>" + "Total marks is "+totalMarks+"<br>")
+document.write("Score of " + names[0] + " is " + scores[0] + ". Percentage: " + percentageMichael + "%<br>");
+document.write("Score of " + names[1] + " is " + scores[1] + ". Percentage: " + percentageJohn + "%<br>");
+document.write("Score of " + names[2] + " is " + scores[2] + ". Percentage: " + percentageTony + "%<br>");
+   
+
+var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+
+document.write("<br>" + "<h1>Q.3</h1>" + "<br>");
+
+document.write("Karachi, Lahore, Islamabad, Quetta, Peshawar" + "<br>");
+document.write("Two of my favourite cites" + "<br>");
+for (var i = 2; i <= 3; i++)
+  document.write("(" + i + ") " + " " + cities[i] + "<br>");    
+
+
+  document.write("<h1>Q4.</h1>")
+  var arr = ["This", "is", "my", "cat"];
+  document.write("<br>" + "<h1>Array Text: </h1>" + arr);
+  document.write("<h1>Array String: </h1>"+"<br>" );
+var str = arr[0] + " " + arr[1] + " " + arr[2] + " " + arr[3];
+
+document.write("String:", str);
+
+document.write("<h1>Q5.</h1>")
+document.write("<h1>Device</h1>")
+
+var devices = ["keyboard", "mouse", "printer", "monitor"];
+
+document.write(devices +"<br>"+"<br>")
+document.write("Out:", devices[0]+"<br>"); // keyboard
+document.write("Out:", devices[1]+"<br>"); // mouse
+document.write("Out:", devices[2]+"<br>"); // printer
+document.write("Out:", devices[3]+"<br>"); // monitor
+
+document.write("<h1>Q6.</h1>")
+document.write("<br>");
+      var values = ["Keyboard ", "Mouse ", "Printer ", "Monitor "];
+      document.write("<h1>Devices:</h1>" + "<br>");
+      document.write(values);
+      reverse = values.pop();
+      document.write("<br>" + "Out: " + "<br>" + reverse);
+      reverse = values.pop();
+      document.write("<br>" + "Out: " + "<br>" + reverse);
+      reverse = values.pop();
+      document.write("<br>" + "Out: " + "<br>" + reverse);
+      reverse = values.pop();
+      document.write("<br>" + "Out: " + "<br>" + reverse);
+
+document.write("<h1>Q7.</h1>")
+
+      var phoneManufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+document.write("Phone Manufacturers:<br>");
+for (var i = 0; i < phoneManufacturers.length; i++) {
+    document.write(phoneManufacturers[i] + "<br>");
+}
+</script>
+</html>

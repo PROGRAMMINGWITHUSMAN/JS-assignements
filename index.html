@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="asset/img/js.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Arithmetic Operations</title>
+    
+    <div class="main">
+    <img src="asset/img/js.png" alt="">
+    <button><a href="index.html">Assignement1</a></button>
+    <button><a href="assignement2.html">Assignement2</a></button>
+    <button><a href="assignement3.html">Assignement3</a></button>
+    <button><a href="assignement4.html">Assignement4</a></button>
+    
+</div><hr>
+<center><h1>First Assignement</h1></center>
+</head>
+<body>
+    <script>
+        document.write("<h1>Q1.</h1>");
+        document.write("<h1>Results:</h1>");
+
+        var a = 10;
+        
+        document.write("The value of a is: " + a + "<br><br>");
+        document.write("------------------<br><br>");
+
+        // Pre-increment
+        var a = ++a;
+        document.write("The value of ++a is: " + a + "<br>");
+        document.write("Now the value of a is: " + a + "<br><br>");
+
+        // Post-increment
+        var a = a++;
+        document.write("The value of a++ is: " + a++ + "<br>");
+        document.write("Now the value of a is: " + a + "<br><br>");
+
+        // Pre-decrement
+        var a = --a;
+        document.write("The value of --a is: " + a + "<br>");
+        document.write("Now the value of a is: " + a + "<br><br>");
+
+        // Post-decrement
+        var a = a--;
+        document.write("The value of a-- is: " + a-- + "<br>");
+        document.write("Now the value of a is: " + a + "<br>");
+        document.write("<h1>Q2.</h1>");
+
+        var a = 2, b = 1;
+        var result = --a - --b + ++b + b--;
+
+        document.write("The value of a=2"+"<br>");
+        document.write("The value of b=1"+"<br>");
+        document.write("Question --a - --b + ++b + b-- ?"+ "<br>");
+
+        document.write("a is" + a + "<br>"); // Output: a = 1
+        document.write("b is" + b + "<br>"); // Output: b = 0
+        document.write("Answer is --a - --b + ++b + b-- = " + result + " " +"<br>");
+
+        document.write("<h1>Q3.</h1>");
+        document.write("<h1>Q3. dekhne ke liye page reload karen</h1>");
+
+        var name = prompt("Enter your name:");
+        alert("Hello, " + name + "! Nice to meet you. and welcome");
+
+        document.write("<h1>Q4.</h1>");
+        document.write("<h1>Q4. dekhne ke liye page reload karen then 3rd prompt pe Q4.hai</h1>");
+
+        var tablenum = prompt("Enter Table Number");
+
+        if (tablenum === "") {
+        tablenum = 5;}
+
+        document.write("<br>" + "<h3>Table of " + tablenum + " </h3>");
+        document.write("<br>" +tablenum+ " x 1 = " +tablenum* 1);
+        document.write("<br>" +tablenum+ " x 2 = " +tablenum* 2);
+        document.write("<br>" +tablenum+ " x 3 = " +tablenum* 3);
+        document.write("<br>" +tablenum+ " x 4 = " +tablenum* 4);
+        document.write("<br>" +tablenum+ " x 5 = " +tablenum* 5);
+        document.write("<br>" +tablenum+ " x 6 = " +tablenum* 6);
+        document.write("<br>" +tablenum+ " x 7 = " +tablenum* 7);
+        document.write("<br>" +tablenum+ " x 8 = " +tablenum* 8);
+        document.write("<br>" +tablenum+ " x 9 = " +tablenum* 9);
+        document.write("<br>" +tablenum+ " x 10 = " +tablenum* 10);
+
+        document.write("<br>"+"<h1>Q5.</h1>");
+        document.write("<h1>Q5. dekhne ke liye page reload karen then 4th prompt pe Q5.hai</h1>");
+
+
+var subject1 = prompt("Enter the name of the first subject:");
+var subject2 = prompt("Enter the name of the second subject:");
+var subject3 = prompt("Enter the name of the third subject:");
+
+var marksSubject1 = +prompt("Enter the obtained marks for " + subject1 + " (Total marks is 100) :");
+var marksSubject2 = +prompt("Enter the obtained marks for " + subject2 + " (Total marks is 100) :");
+var marksSubject3 = +prompt("Enter the obtained marks for " + subject3 + " (Total marks is 100) :");
+
+
+var totalObtainedMarks = marksSubject1 + marksSubject2 + marksSubject3;
+var totalMarks = 100 * 3;
+var totalmarks2 = 100
+var percentage = (totalObtainedMarks / totalMarks) * 100;
+
+
+document.write("<b>Subject</b>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + "<b>Total Marks</b>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ " <b>Total Obtained Marks</b>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+"<b>Percentage</b>"+"<br>");
+document.write(subject1 + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+ totalmarks2 + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+marksSubject1 + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+marksSubject1 +"%"+"<br>");
+document.write(subject2 + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+totalmarks2 + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+marksSubject2 + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+marksSubject2 +"%"+"<br>");
+document.write(subject3 + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+totalmarks2 + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+marksSubject3 + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+marksSubject3 +"%"+"<br><br>");
+document.write( "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>"+totalMarks+"</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>"+ totalObtainedMarks+"</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;");
+document.write("<b>"+percentage +"</b>%<br><br><br><br>");
+
+    </script>
+</body>
+</html>
